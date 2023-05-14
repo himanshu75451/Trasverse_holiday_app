@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Imgs/Travasure_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/destination.css">
+    <title>Travasure - Travel around the world</title>
+    <style>
+   
+    </style>
+</head>
+<body>
+    <nav>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" id="bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+        <div style="width: 15%;" class="logo_img">
+            <a href="./index.html"><img src="./Imgs/Travasure_white_with_logo_Transparent.png" alt="err" style="width: 100%;margin: auto; display: block;"></a> 
+        </div>
+        <div class="options" id="option">
+            <ul>
+                <li><a href="#">Download App</a></li>
+                <li><a href="#">Parter With Us</a></li>
+                <li><a href="#">Installment</a></li>
+                <li><a href="#">Saved</a></li>
+                <li><a href="./Destination.html">Holidays</a></li>
+                <li><a href="#" id="mybookings">My Bookings</a></li>
+            </ul>
+        </div>
+        <div class="Resister">
+            <a href="#" id="LoginText">Resister</a></li>
+        </div>
+    </nav>
+
+    <!-- ======================================================================================= -->
+
+    <div class="Categories">
+        <p><i class="fa-solid fa-arrow-trend-up"></i> Trending searches: </p>
+        <button id="trend">All</button>
+        <button id="Beach">Beach</button>
+        <button id="Hills">Hills</button>
+        <button id="Temple">Temple</button>
+        <button id="Desert">Desert</button>
+        <button id="Lake">Lake</button>
+        <button id="Fort">Fort</button>
+        <button id="Mountain Snawfall">Mountain Snowfall</button>
+        <button id="Mountain">Mountain</button>
+        <button id="Mountain Climbing">Mountain Climbing</button>
+        <button id="Dam">Dam</button>
+        <button id="Museum">Museum</button>
+    </div>
+    <hr>
+
+    <!-- ========================================================================================== -->
+
+    <div id="Destination-body">
+        <div id="Destination-Data25">
+            <div class="filterSection">
+                <div id="filterPrice">
+                    <h3>Price</h3>
+                    <hr>
+                    <div>
+                        <input type="radio" name="PriceValue" value="ZeroToNinetynine" id="one">
+                        <span>Rs. 1000 - Rs. 3000</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="PriceValue" value="oneHunderedToOneNininetynine" id="two">
+                        <span>Rs. 3000 - Rs. 8000</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="PriceValue" value="twoHunderedToTowNininetynine" id="three">
+                        <span>Rs. 8000 - Rs. 10000</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="PriceValue" value="threeHunderedToThreeNininetynine" id="four">
+                        <span>Rs. 11000 - Rs. 15000</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="PriceValue" value="fourHunderedToFourNininetynine" id="five">
+                        <span>Rs. 15000 - Rs. 20000</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="PriceValue" value="fiveHunderedToFiveNininetynine" id="six">
+                        <span>Rs. 20000 - Rs. 25000</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="PriceValue" value="sixHunderedToSixNininetynine" id="seven">
+                        <span>Rs. 25000 - Rs. 30000</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="PriceValue" value="sevenHunderedToNineNininetynine" id="eight">
+                        <span>Rs. 30000 - Rs. 35000</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="PriceValue" value="oneThousandAbove" id="nine">
+                        <span> Above &nbsp; - Rs. 35000 </span>
+                    </div>
+                </div><br>
+            </div>
+
+            <!--  Rating Section -->
+
+            <div id="RatingSection">
+                <div id="filterRating">
+                    <h3>Guest rating</h3>
+                    <hr id="head">
+                    <div>
+                        <input type="checkbox" name="Rating" value="Wonderful">
+                        <p>Wonderful [9+]</p>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Rating" value="Excellent">
+                        <p>Excellent [8+]</p>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Rating" value="Very Good">
+                        <p>Very Good [7+]</p>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Rating" value="Good">
+                        <p>Good [6+]</p>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Rating" value="Average">
+                        <p>Average [Below 5]</p>
+                    </div>
+                </div>
+            </div><br>
+        </div>
+        <hr>
+
+        <div id="Destination-Data22">
+            <div id="top-div-search-filter">
+                <h2>Destinations</h2>
+                <form class="searchIcon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="Search within Destination" type="text" id="search2">
+                    <!-- <input type="submit" value="submit">  -->
+                </form>
+                <div id="filter">
+                    <span>Sort by :</span>
+                    <select name="" id="select-tag">
+                        <option value=""></option>
+                        <option value="Price Low To High">Price Low To High</option>
+                        <option value="Price High To Low">Price High To Low</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div id="tourist-Data">
+                 <!-- Tourist-Data Append here -->
+            </div>
+        </div>
+
+        <div id="Destination-Data">
+            <!-- Destination-Data Append here -->
+        </div>
+        
+    </div>
+
+
+    <!-- ========================================================================================== -->
+
+    <footer>
+        <div class="top">
+            <div class="logo">
+                <div> 
+                    <img src="./Imgs/Travasure_white_with_logo_Transparent.png" alt="err">
+                </div>
+                <div> 
+                    <p>Convenience is our prority to satisfy our customers, and we provide all the features you can easily and quickly.</p>
+                </div>
+           </div>
+           <div class="about">
+                <div>
+                    <h3>About</h3>
+                    <ul>
+                        <li>How to Book</li>
+                        <li>Contact Us</li>
+                        <li>Help Center</li>
+                    </ul>
+                </div>
+                <div> 
+                    <h3>Products</h3>
+                    <ul>
+                        <li>destination</li>
+                        <li>Flight</li>
+                        <li>Lodging</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom">
+            <div>Privacy Policy</div>
+            <div>Cpoyright © 2023 Travasure</div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    let menu_btn = document.getElementsByClassName("bi-list")[0];
+    let options = document.getElementById("option")
+    menu_btn.addEventListener("click",() =>{
+         options.classList.toggle("active");
+    })
+</script>
+<script src="./Script/Destination.js"></script>
+
+</html>
