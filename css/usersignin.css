@@ -26,7 +26,7 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     position: absolute;
     border-radius: 20px;
-    background-color:#2E79BA ;
+    background-color: #2E79BA;
     /* background: linear-gradient(90deg,  #003B95 15%,white 65%); */
 }
 
@@ -47,11 +47,12 @@
     position: relative;
     width: 50%;
 }
-#leftdiv img{
+
+#leftdiv img {
     height: 100%;
     width: 100%;
     border-bottom-left-radius: 20px;
-   filter: blur(2px);
+    filter: blur(2px);
 }
 
 #heading {
@@ -60,12 +61,14 @@
     justify-content: space-between;
     margin-left: 2%;
     margin-top: 2%;
-    margin-bottom:2%;
+    margin-bottom: 2%;
 }
-#logo{
+
+#logo {
     height: 24%;
     width: 24%;
 }
+
 #logo>img {
     height: 100%;
     width: 100%;
@@ -74,11 +77,12 @@
     position: relative;
     cursor: pointer;
 }
+
 #head {
     position: relative;
     font-size: 155%;
     font-weight: bolder;
-    color:white;
+    color: white;
 }
 
 #link {
@@ -89,23 +93,25 @@
     color: beige;
     gap: 20%;
 }
-#link div{
+
+#link div {
     border: 2px solid #fff;
     padding: 6px 15px;
-border-radius: 8px;
-margin-left: -13%;
+    border-radius: 8px;
+    margin-left: -13%;
 }
-#link div:hover{
-font-weight: bold;
+
+#link div:hover {
+    font-weight: bold;
 }
 
 #description {
     margin-top: 1%;
     margin-left: 5%;
-    color:black;
-    font-size:large;
+    color: black;
+    font-size: large;
     font-weight: 500;
-   position: relative;
+    position: relative;
 }
 
 #description>p {
@@ -114,16 +120,21 @@ font-weight: bold;
     opacity: 0;
     animation: reveal .10s forwards var(--delay);
 }
-@keyframes reveal{
-    from {translate:0 20px;
+
+@keyframes reveal {
+    from {
+        translate: 0 20px;
     }
-    to {translate:none;
-        opacity:1;
+
+    to {
+        translate: none;
+        opacity: 1;
     }
 }
+
 #description>p::first-letter {
     font-size: 120%;
-    color:white;
+    color: white;
     font-weight: bold;
 }
 
@@ -164,18 +175,21 @@ form {
     outline: 0;
     font-size: 14px;
     height: 100%;
-    background:transparent;
+    background: transparent;
     color: #fff;
-   
+
 }
-input::placeholder{
+
+input::placeholder {
     color: #c0bdbd;
 }
-input:focus::placeholder{
-    color:transparent;
+
+input:focus::placeholder {
+    color: transparent;
 }
+
 i {
-    color:white;
+    color: white;
     margin-left: 2%;
     margin-right: 3%;
 }
@@ -187,16 +201,17 @@ button {
     margin-top: 1%;
     border-radius: 8px;
     border: 2px solid #003B95;
-    background:#003B95;
+    background: #003B95;
     color: rgb(252, 250, 250);
     font-weight: bold;
     height: 10%;
 }
+
 button:hover {
     background: #003B95;
     border: 2px solid white;
     color: white;
-    font-size:15px;
+    font-size: 15px;
 }
 
 #link div {
@@ -214,17 +229,20 @@ a {
     text-decoration: none;
     color: white;
 }
-#rightdiv p{
+
+#rightdiv p {
     font-size: medium;
     margin-top: 2%;
     color: #fff;
 }
-#rightdiv a{
-    color:rgb(183, 216, 35);
+
+#rightdiv a {
+    color: rgb(183, 216, 35);
     text-decoration: underline;
     font-weight: bold;
 }
-.backimage{
+
+.backimage {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -232,34 +250,40 @@ a {
 
 
 @media only screen and (max-width: 850px) {
-  
-   #link div{
-    border: none;
-    padding: none;
-   }
-   #link p{
-    display: none;
-   }
-   #leftdiv p{
-    font-size: 15px;
-   }
-   #rightdiv p{
-    font-size: 12px;
-   }
-   input::placeholder{
-    font-size: 9px;
-   }
-  }
 
-  @media only screen and (max-width: 650px) {
-    #link{
+    #link div {
+        border: none;
+        padding: none;
+    }
+
+    #link p {
+        display: none;
+    }
+
+    #leftdiv p {
+        font-size: 15px;
+    }
+
+    #rightdiv p {
+        font-size: 12px;
+    }
+
+    input::placeholder {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #link {
         flex-direction: column;
-       }
-   #leftdiv p{
-   font-size: 8px;
-   margin-bottom: -7%;
-   }
-    input::placeholder{
+    }
+
+    #leftdiv p {
+        font-size: 8px;
+        margin-bottom: -7%;
+    }
+
+    input::placeholder {
         font-size: 0px;
-       }
-   }
+    }
+}

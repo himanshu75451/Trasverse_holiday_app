@@ -131,7 +131,7 @@
     <form action="">
         <div class="inputBox">
             <span>card number</span>
-            <input id="cninp" type="text" class="card-number-input" maxlength="16">
+            <input id="cninp" type="text" class="card-number-input" maxlength="19">
         </div>
         <div class="inputBox">
             <span>card holder</span>
@@ -181,6 +181,15 @@
 </body>
 <script>
 let container=document.getElementById("seccont")
+
+document.querySelector('.card-number-input').addEventListener('keyup',function (e) {
+  // console.log(e.keyCode);
+  if (e.keyCode !== 8) {
+    if (this.value.length === 4 || this.value.length === 9 || this.value.length === 14) {
+      this.value = this.value += ' ';
+    }
+  }
+});
 
 
 document.querySelector('.card-number-input').oninput = () =>{

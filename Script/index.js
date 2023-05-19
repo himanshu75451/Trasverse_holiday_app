@@ -1,26 +1,23 @@
 let menu_btn = document.getElementsByClassName("bi-list")[0];
 let options = document.getElementById("option")
-menu_btn.addEventListener("click",()=>
-{
-    options.classList.toggle("active")
+menu_btn.addEventListener("click", () => {
+  options.classList.toggle("active")
 
 })
 
 // ================nav Bar=========================//
 let icon = document.getElementById("logo")
-icon.addEventListener("click",()=>
-{
-    window.location.href = "./index.html"
+icon.addEventListener("click", () => {
+  window.location.href = "./index.html"
 })
 
 //===================Product========================//
 
 
 let all = document.getElementById("all")
- all.addEventListener("click",()=>
- {
-    window.location.href = "./Destination.html"
- })
+all.addEventListener("click", () => {
+  window.location.href = "./Destination.html"
+})
 
 // ========================slides======================//
 let head = document.getElementById("slides");
@@ -95,53 +92,42 @@ setInterval(() => {
 
 // ==============================Login=======================================//
 
-let Login  = document.getElementById("LoginText")
+let Login = document.getElementById("LoginText")
 
-let data=JSON.parse(localStorage.getItem("userdata"))||[];
-let x= false;
-  data.forEach((elm)=>
-  {
-    console.log(elm.present)
-    if(elm.present==true)
-    {
-      x= true;
-    }
-  })
-  if(x==false)
-  {
-    Login.innerText="Resister"
+let data = JSON.parse(localStorage.getItem("userdata")) || [];
+let x = false;
+data.forEach((elm) => {
+  console.log(elm.present)
+  if (elm.present == true) {
+    x = true;
   }
-  else
-  {
-    Login.innerText = "Log Out"
-  }
-Login.addEventListener("click",()=>
-{ 
-  if(Login.innerText == "Resister")
-    {
-    window.location.href="./userlogin.html"
-    }
-     else if(Login.innerText == "Log Out")
-    { 
-     data.forEach((elm)=>
-     {
-      elm.present= false;
-     })
-      localStorage.setItem("userdata",JSON.stringify(data))
-      Login.innerText = "Resister"
-    }
 })
- let myBooking = document.getElementById("mybookings")
- myBooking.addEventListener("click",()=>
- {
-  if(Login.innerText == "Log Out")
-  {
-    window.location.href ="./mybookings.html"
+if (x == false) {
+  Login.innerText = "Resister"
+}
+else {
+  Login.innerText = "Log Out"
+}
+Login.addEventListener("click", () => {
+  if (Login.innerText == "Resister") {
+    window.location.href = "./userlogin.html"
   }
-  
-  else
-  {
+  else if (Login.innerText == "Log Out") {
+    data.forEach((elm) => {
+      elm.present = false;
+    })
+    localStorage.setItem("userdata", JSON.stringify(data))
+    Login.innerText = "Resister"
+  }
+})
+let myBooking = document.getElementById("mybookings")
+myBooking.addEventListener("click", () => {
+  if (Login.innerText == "Log Out") {
+    window.location.href = "./mybookings.html"
+  }
+
+  else {
     alert("User has to Login")
     window.location.href = "./userlogin.html"
   }
- })
+})

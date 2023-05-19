@@ -7,7 +7,7 @@ let table = document.querySelector("tbody");
 
 
 appendData();
-function appendData(){
+function appendData() {
     let row = document.createElement("tr");
 
     let td1 = document.createElement("td");
@@ -21,12 +21,12 @@ function appendData(){
     let td9 = document.createElement("td");
 
     data1.forEach(ele => {
-        
+
         td1.innerText = ele.name;
         td2.innerText = ele.phone;
         td3.innerText = ele.people;
         td4.innerText = ele.date;
-        
+
     });
 
     data2.forEach(ele => {
@@ -35,10 +35,10 @@ function appendData(){
         td6.innerText = ele.catogary;
         td7.innerText = ele.package;
         td8.innerText = `Rs.${ele.price}`;
-        
+
     });
 
-    td9.innerText = `Rs.${(+td8.innerText)*(+td3.innerText)}`;
+    td9.innerText = `Rs.${(+td8.innerText) * (+td3.innerText)}`;
     // if(td9.innerText = '0'){
     //     td9.innerText = null;
     // };

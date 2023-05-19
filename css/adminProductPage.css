@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -64,7 +64,7 @@ nav a:hover {
 #sidebar-two {
     width: 77%;
     border: 1px solid green;
-    
+
 }
 
 .card-list {
@@ -109,13 +109,13 @@ nav a:hover {
     /* border: 1px solid red; */
 }
 
-#removeBtn:hover{
+#removeBtn:hover {
     background-color: red;
     color: white;
     font-size: large;
 }
 
-#editBtn:hover{
+#editBtn:hover {
     background-color: green;
     color: white;
     font-size: large;
@@ -132,12 +132,3 @@ nav a:hover {
 }
 
 /* side navbar */
-
-
-
-
-
-
-
-
-

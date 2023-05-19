@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -63,7 +63,8 @@ table {
     width: 100%;
 }
 
-th, td {
+th,
+td {
     border: 1px solid red;
     border-top: 1px solid black;
     /* border-bottom: 1px solid black; */

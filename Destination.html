@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./Imgs/Travasure_icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/destination.css">
+
     <title>Travasure - Travel around the world</title>
     <style>
-   
+
     </style>
 </head>
+
 <body>
     <nav>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" id="bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+            id="bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
         </svg>
         <div style="width: 15%;" class="logo_img">
-            <a href="./index.html"><img src="./Imgs/Travasure_white_with_logo_Transparent.png" alt="err" style="width: 100%;margin: auto; display: block;"></a> 
+            <a href="./index.html"><img src="./Imgs/Travasure_white_with_logo_Transparent.png" alt="err"
+                    style="width: 100%;margin: auto; display: block;"></a>
         </div>
         <div class="options" id="option">
             <ul>
@@ -27,11 +35,11 @@
                 <li><a href="#">Installment</a></li>
                 <li><a href="#">Saved</a></li>
                 <li><a href="./Destination.html">Holidays</a></li>
-                <li><a href="#" id="mybookings">My Bookings</a></li>
+                <li><a href="./mybookings.html" id="mybookings">My Bookings</a></li>
             </ul>
         </div>
         <div class="Resister">
-            <a href="#" id="LoginText">Resister</a></li>
+            <a href="./userlogin.html" id="LoginText">Resister</a></li>
         </div>
     </nav>
 
@@ -149,32 +157,133 @@
                     </select>
                 </div>
             </div>
-            
+
             <div id="tourist-Data">
-                 <!-- Tourist-Data Append here -->
+                <!-- Tourist-Data Append here -->
             </div>
         </div>
 
         <div id="Destination-Data">
             <!-- Destination-Data Append here -->
         </div>
-        
+
     </div>
 
+    <!-- Modal -->
+
+    <div class="backdrop">
+        <div class="modal-body">
+            <div class="container" id="seccont">
+                <form id="booking-form">
+
+                    <div class="row">
+
+                        <div class="col" >
+                            <div class="header">
+
+                                <h3 class="title">booking details</h3>
+                                <i class='fa fa-close modal-close'></i>
+                            </div>
+
+                            <div class="inputBox">
+                                <span>full name :</span>
+                                <input id="ibname" type="text" placeholder="enthusiast traveller">
+                            </div>
+                            <div class="inputBox">
+                                <span>email :</span>
+                                <input id="ibemail" type="email" placeholder="example@example.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>Phone Number :</span>
+                                <input id="ibadd" type="text" maxlength="10" placeholder="1234567890">
+                            </div>
+
+                            <div class="flex">
+                                <div class="inputBox">
+                                    <span>Source city :</span>
+                                    <input id="ibcity" type="text" placeholder="Kolkata">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Number of People:</span>
+                                    <input id="ibpeople" type="number" min="0" placeholder="0">
+                                </div>
+
+                            </div>
+
+
+                            <div class="flex">
+                                <div class="inputBox">
+                                    <span>Journey starts:</span>
+                                    <input id="ibdate" type="date" required pattern="\d{4}-\d{2}-\d{2}">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Age:</span>
+                                    <input id="ibage" type="number" min="1" placeholder="0">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="col">
+
+                            <h3 class="title">payment</h3>
+
+                            <div class="inputBox">
+                                <span>cards accepted :</span>
+                                <img src="images/card_img.png" alt="">
+                            </div>
+                            <div class="inputBox">
+                                <span>name on card :</span>
+                                <input type="text" placeholder="mr. enthusiast buyer">
+                            </div>
+                            <div class="inputBox">
+                                <span>credit / Debit card number :</span>
+                                <input type="number" placeholder="1111-2222-3333-4444">
+                            </div>
+                            <div class="inputBox">
+                                <span>exp month :</span>
+                                <input type="text" placeholder="january">
+                            </div>
+
+                            <div class="flex">
+                                <div class="inputBox">
+                                    <span>exp year :</span>
+                                    <input type="number" placeholder="2022">
+                                </div>
+                                <div class="inputBox">
+                                    <span>CVV :</span>
+                                    <input type="text" placeholder="123">
+                                </div>
+                            </div>
+
+                        </div> -->
+
+                    </div>
+
+                    <input type="submit" value="proceed to checkout" class="submit-btn">
+
+                    <!-- <a href="payment.html">SAVE ADDRESS AND PAY</a> -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal End -->
 
     <!-- ========================================================================================== -->
 
     <footer>
         <div class="top">
             <div class="logo">
-                <div> 
+                <div>
                     <img src="./Imgs/Travasure_white_with_logo_Transparent.png" alt="err">
                 </div>
-                <div> 
-                    <p>Convenience is our prority to satisfy our customers, and we provide all the features you can easily and quickly.</p>
+                <div>
+                    <p>Convenience is our prority to satisfy our customers, and we provide all the features you can
+                        easily and quickly.</p>
                 </div>
-           </div>
-           <div class="about">
+            </div>
+            <div class="about">
                 <div>
                     <h3>About</h3>
                     <ul>
@@ -183,7 +292,7 @@
                         <li>Help Center</li>
                     </ul>
                 </div>
-                <div> 
+                <div>
                     <h3>Products</h3>
                     <ul>
                         <li>destination</li>
@@ -212,10 +321,57 @@
 <script>
     let menu_btn = document.getElementsByClassName("bi-list")[0];
     let options = document.getElementById("option")
-    menu_btn.addEventListener("click",() =>{
-         options.classList.toggle("active");
+    menu_btn.addEventListener("click", () => {
+        options.classList.toggle("active");
     })
 </script>
+
 <script src="./Script/Destination.js"></script>
+
+<script>
+
+    let book = JSON.parse(localStorage.getItem("mybookings")) || []
+    let container = document.getElementById("seccont")
+    console.log('book', book);
+    let form = document.querySelector("#booking-form");
+    console.log('form', form);
+    form.addEventListener("submit", (e) => {
+        e.preventDefault()
+        if (form.ibname.value === "" && form.ibemail.value === "" && form.ibadd.value === "" && form.ibcity.value === "") {
+            console.log("somthing wrong")
+            container.innerHTML = null
+            popup1.classList.add("openpopup1")
+        }
+        else {
+            console.log("done");
+            // openpopup()
+            // container.innerHTML=null
+            let obj = {
+                name: form.ibname.value,
+                email: form.ibemail.value,
+                phone: form.ibadd.value,
+                city: form.ibcity.value,
+                people: form.ibpeople.value,
+                date: form.ibdate.value,
+                age: form.ibage.value
+            }
+            console.log(obj)
+            book.push(obj)
+            localStorage.setItem("mybookings", JSON.stringify(book))
+
+
+
+            window.location.assign("./payment.html")
+        }
+    })
+
+
+        // function closepopup1(){
+        //     // popup1.classList.remove("openpopup1")
+        //     // window.location.reload()
+        //     // window.location.assign("./payment.html")
+        // }
+
+</script>
 
 </html>
